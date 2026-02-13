@@ -24,45 +24,113 @@
         font-family: "Urbanist", sans-serif;
         font-optical-sizing: auto;
       }
+
+      /* Premium Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+      }
+
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+
+      .delay-100 {
+        animation-delay: 0.1s;
+      }
+      .delay-200 {
+        animation-delay: 0.2s;
+      }
+      .delay-300 {
+        animation-delay: 0.3s;
+      }
     </style>
   </head>
 
-  <body>
-    <!-- BAnner section  -->
-    <section class="grid grid-cols-2 container mx-auto mt-6">
-      <div class="banner-left space-y-5">
+  <body class="bg-gray-50 overflow-x-hidden">
+    <!-- Banner section -->
+    <section
+      class="grid lg:grid-cols-2 container mx-auto mt-12 items-center gap-10 px-4 lg:px-0"
+    >
+      <div class="banner-left space-y-7">
         <h2
-          class="text-[80px] font-bold bg-gradient-to-r from-cyan-600 to-blue-300 bg-clip-text text-transparent"
+          class="text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent animate-fade-in-up delay-100"
         >
           It's good <br />
           tea time at The <br />
           Tea House
         </h2>
-        <p class="text-cyan-700/80 font-medium text-[20px]">
-          Tea and Botanical Solutions Supplier Give Optimum <br />
-          Satisfaction To Your Taste Buds.
+        <p
+          class="text-gray-600 font-medium text-lg lg:text-xl max-w-lg animate-fade-in-up delay-200"
+        >
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
         </p>
         <button
-          class="py-4 px-5 rounded-md text-white font-semibold bg-linear-to-r from-cyan-300 to to-blue-300 flex gap-3"
+          class="group py-4 px-8 rounded-full text-white font-bold text-lg bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center gap-3 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/30 animate-fade-in-up delay-300"
         >
           Explore More
           <img
-            class="inline-block width-[50px] height-[30px]"
+            class="w-6 transition-transform group-hover:translate-x-1 duration-300"
             src="images/arrow.png"
             alt=""
           />
         </button>
       </div>
-      <div class="banner-right relative flex justify-end">
-        <img src="images/banner.png" alt="" class="w-full object-cover" />
-        <!-- Rating -->
+
+      <div
+        class="banner-right relative flex justify-end animate-fade-in-up delay-200"
+      >
+        <!-- Main Image with subtle float -->
+        <div class="relative z-10 animate-float">
+          <img
+            src="images/banner.png"
+            alt="Delicious Tea"
+            class="w-full max-w-xl object-contain drop-shadow-2xl"
+          />
+        </div>
+
+        <!-- Background decorative blob (optional refinement) -->
         <div
-          class="absolute bottom-10 left-10 lg:left-0 bg-white rounded-2xl shadow-lg px-5 py-4 flex items-center gap-4 transition-all hover:scale-105 duration-300"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-br from-cyan-200/40 to-blue-200/40 blur-3xl rounded-full -z-0"
+        ></div>
+
+        <!-- Rating Card -->
+        <div
+          class="absolute bottom-10 left-4 lg:left-10 z-20 bg-white/90 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl px-5 py-4 flex items-center gap-4 transition-all hover:scale-105 duration-300 animate-float"
+          style="animation-delay: 2s"
         >
-          <img src="./images/banner_rating.png" alt="" class="w-10" />
+          <div class="bg-yellow-50 p-2 rounded-full">
+            <img src="./images/banner_rating.png" alt="" class="w-8" />
+          </div>
           <div>
-            <h2 class="text-gray-900 text-2xl font-bold">5.00</h2>
-            <p class="text-gray-500 font-medium text-xs">Trust Pilot Ratings</p>
+            <h2 class="text-gray-900 text-2xl font-bold font-manrope">5.00</h2>
+            <p class="text-gray-500 font-medium text-xs tracking-wide">
+              Trust Pilot Ratings
+            </p>
           </div>
         </div>
       </div>
