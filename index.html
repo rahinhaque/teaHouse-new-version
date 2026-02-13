@@ -6,7 +6,7 @@
     <title>Tea-house Website</title>
 
     <!-- Links -->
-    <link rel="shortcut icon" href="./images/circles.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/tea-1.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
     <!-- tailwindcss -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -66,6 +66,12 @@
       }
       .delay-300 {
         animation-delay: 0.3s;
+      }
+      .delay-400 {
+        animation-delay: 0.4s;
+      }
+      .delay-500 {
+        animation-delay: 0.5s;
       }
     </style>
   </head>
@@ -130,6 +136,130 @@
             <h2 class="text-gray-900 text-2xl font-bold font-manrope">5.00</h2>
             <p class="text-gray-500 font-medium text-xs tracking-wide">
               Trust Pilot Ratings
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature section  -->
+
+    <section class="container mx-auto px-4 py-20">
+      <!-- "Feature section header" -->
+      <div class="text-center space-y-6 mb-16 max-w-3xl mx-auto">
+        <h2
+          class="text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent animate-fade-in-up delay-100"
+        >
+          Our Featured Products
+        </h2>
+        <p
+          class="text-gray-600 text-lg animate-fade-in-up delay-200 leading-relaxed"
+        >
+          There are many variations of kinds of tea, matcha, coffee and drinks
+          available, but the majority have suffered alteration in some form, by
+          injected humour, or randomised words which don't look even slightly
+          believable.
+        </p>
+      </div>
+
+      <!-- Feature section cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1: Milk Tea -->
+        <div
+          class="group bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-200"
+        >
+          <div
+            class="bg-gray-50 rounded-2xl h-64 flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-gray-100 transition-colors duration-300"
+          >
+            <img
+              src="./images/tea-1.png"
+              alt="Milk Tea"
+              class="w-[50%] object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="text-center space-y-2">
+            <h3
+              class="text-2xl font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300"
+            >
+              Milk Tea
+            </h3>
+            <p class="text-gray-500 font-medium">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Black Tea -->
+        <div
+          class="group bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-300"
+        >
+          <div
+            class="bg-gray-50 rounded-2xl h-64 flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-gray-100 transition-colors duration-300"
+          >
+            <img
+              src="./images/tea-2.png"
+              alt="Black Tea"
+              class="w-[50%] object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="text-center space-y-2">
+            <h3
+              class="text-2xl font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300"
+            >
+              Black Tea
+            </h3>
+            <p class="text-gray-500 font-medium">
+              Classic styling with rich flavor
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Lemon Tea -->
+        <div
+          class="group bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-400"
+        >
+          <div
+            class="bg-gray-50 rounded-2xl h-64 flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-gray-100 transition-colors duration-300"
+          >
+            <img
+              src="./images/tea-3.png"
+              alt="Lemon Tea"
+              class="w-[50%] object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="text-center space-y-2">
+            <h3
+              class="text-2xl font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300"
+            >
+              Lemon Tea
+            </h3>
+            <p class="text-gray-500 font-medium">
+              Zesty and refreshing with a kick
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4: Green Tea -->
+        <div
+          class="group bg-white p-6 rounded-3xl shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up delay-500"
+        >
+          <div
+            class="bg-gray-50 rounded-2xl h-64 flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-gray-100 transition-colors duration-300"
+          >
+            <img
+              src="./images/tea-4.png"
+              alt="Green Tea"
+              class="w-[50%] object-contain drop-shadow-xl group-hover:scale-110 transition-transform duration-500"
+            />
+          </div>
+          <div class="text-center space-y-2">
+            <h3
+              class="text-2xl font-bold text-gray-800 group-hover:text-cyan-600 transition-colors duration-300"
+            >
+              Green Tea
+            </h3>
+            <p class="text-gray-500 font-medium">
+              Healthy choice with antioxidants
             </p>
           </div>
         </div>
