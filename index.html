@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea-house Website</title>
+
+    <!-- Links -->
+    <link rel="shortcut icon" href="./images/circles.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- BAnner section  -->
+    <section class="grid grid-cols-2 container mx-auto mt-6">
+      <div class="banner-left space-y-5">
+        <h2
+          class="text-[80px] font-bold bg-gradient-to-r from-cyan-600 to-blue-300 bg-clip-text text-transparent"
+        >
+          It's good <br />
+          tea time at The <br />
+          Tea House
+        </h2>
+        <p class="text-cyan-700/80 font-medium text-[20px]">
+          Tea and Botanical Solutions Supplier Give Optimum <br />
+          Satisfaction To Your Taste Buds.
+        </p>
+        <button
+          class="py-4 px-5 rounded-md text-white font-semibold bg-linear-to-r from-cyan-300 to to-blue-300 flex gap-3"
+        >
+          Explore More
+          <img
+            class="inline-block width-[50px] height-[30px]"
+            src="images/arrow.png"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="banner-right relative flex justify-end">
+        <img src="images/banner.png" alt="" class="w-full object-cover" />
+        <!-- Rating -->
+        <div
+          class="absolute bottom-10 left-10 lg:left-0 bg-white rounded-2xl shadow-lg px-5 py-4 flex items-center gap-4 transition-all hover:scale-105 duration-300"
+        >
+          <img src="./images/banner_rating.png" alt="" class="w-10" />
+          <div>
+            <h2 class="text-gray-900 text-2xl font-bold">5.00</h2>
+            <p class="text-gray-500 font-medium text-xs">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
