@@ -267,42 +267,88 @@
     </section>
 
     <!-- Great Tea, Freshly Presented -->
-    <section class="container mx-auto  grid grid-cols-2 gap-3">
-      <!-- left div -->
-      <div class="left-div bg-orange-300 flex gap-2">
-        <div class="bg-purple-200 h-[100px] w-[100px]"></div>
-        <div class="bg-purple-200 h-[100px] w-[100px]"></div>
-        <div class="bg-purple-200 h-[100px] w-[100px]"></div>
-        <div class="bg-purple-200 h-[100px] w-[100px]"></div>
+    <section
+      class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 py-12 mb-[90px] items-center"
+    >
+      <!-- Left Div (Images - Bento Grid) -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-6 h-full min-h-[500px]"
+      >
+        <!-- Top Left: Decorative Gradient (Hidden on Mobile) -->
+        <div
+          class="hidden md:block bg-gradient-to-r from-[#d09a9a] to-[#f5f2f0] opacity-10 rounded-3xl animate-fade-in-up delay-100"
+        ></div>
+
+        <!-- Top Right / Mobile First Item: Yellow Drink -->
+        <div
+          class="md:row-span-2 bg-[#e6a6231a] rounded-3xl relative group overflow-hidden flex items-center justify-center p-6 animate-fade-in-up delay-200 hover:bg-[#e6a6232a] transition-all duration-300 shadow-sm hover:shadow-xl"
+        >
+          <img
+            src="./images/fresh-1.png"
+            alt="Fresh Tea"
+            class="w-2/3 md:w-3/4 object-contain transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 drop-shadow-2xl"
+          />
+        </div>
+
+        <!-- Bottom Left / Mobile Second Item: Green Drink -->
+        <div
+          class="md:row-span-2 bg-[#5776391a] rounded-3xl relative group overflow-hidden flex items-center justify-center p-6 animate-fade-in-up delay-300 hover:bg-[#5776392a] transition-all duration-300 shadow-sm hover:shadow-xl"
+        >
+          <img
+            src="./images/fresh-2.png"
+            alt="Fresh Tea"
+            class="w-2/3 md:w-3/4 object-contain transform transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6 drop-shadow-2xl"
+          />
+        </div>
+
+        <!-- Bottom Right: Decorative Gradient (Hidden on Mobile) -->
+        <div
+          class="hidden md:block bg-gradient-to-r from-[#d9d9d9] to-transparent rounded-3xl animate-fade-in-up delay-400 opacity-60"
+        ></div>
       </div>
 
-      <!-- Right Div -->
-      <div class="space-y-8 lg:pl-10">
-        <h2 class="text-5xl font-extrabold leading-tight text-gray-900">
-          Great Tea, Freshly <br> Presented
+      <!-- Right Div (Content) -->
+      <div class="space-y-10 lg:pl-12">
+        <h2
+          class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 animate-fade-in-up delay-100"
+        >
+          <span class="bg-gradient-to-r from-[#d09a9a] to-[#f4ceb5] bg-clip-text text-transparent">Great Tea</span>, <span class="bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent">Freshly <br class="hidden md:block" />
+          Presented</span>
         </h2>
-        <p class="text-gray-600 leading-relaxed text-base lg:text-lg">
-          The meaning of gong cha is chanese is to provide the best tea to
-          emperor from all possessions . It represents the highest quality and
-          self expectation. Establishing in 2006, Gong cha had been deeply
-          appreciated by its custoers because of good words of mouth and unique
-          customized service orginated from Taiwan.
+        <p
+          class="text-gray-600 leading-relaxed text-lg animate-fade-in-up delay-200"
+        >
+          The meaning of Gong Cha in Chinese is to provide the best tea to the
+          emperor from all possessions. It represents the highest quality and
+          self expectation. Established in 2006, Gong cha has been deeply
+          appreciated by its customers because of good word-of-mouth and unique
+          customized service originated from Taiwan.
         </p>
 
-        <div class="space-y-6">
-          <div class="space-y-2">
-            <h3 class="text-xl font-bold text-gray-900">Unique Taste</h3>
-            <p class="text-gray-600 leading-relaxed">
-              A Unique and different style from other teapots gives a <br> luxurious
-              and minimalist impression
+        <div class="space-y-8 animate-fade-in-up delay-300">
+          <div class="group">
+            <h3
+              class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors"
+            >
+              Unique Taste
+            </h3>
+            <p class="text-gray-600 leading-relaxed text-base">
+              A Unique and different style from other teapots gives a
+              <br class="hidden md:block" />
+              luxurious and minimalist impression.
             </p>
           </div>
 
-          <div class="space-y-2">
-            <h3 class="text-xl font-bold text-gray-900">Premium Quality</h3>
-            <p class="text-gray-600 leading-relaxed">
-              Premium Quality that makes tea more elegant and more <br> durable when
-              you use it.
+          <div class="group">
+            <h3
+              class="text-2xl font-bold text-gray-900 mb-2 group-hover:text-cyan-600 transition-colors"
+            >
+              Premium Quality
+            </h3>
+            <p class="text-gray-600 leading-relaxed text-base">
+              Premium Quality that makes tea more elegant and more
+              <br class="hidden md:block" />
+              durable when you use it.
             </p>
           </div>
         </div>
