@@ -14,9 +14,12 @@
     <!-- Google-Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" -->
+    <!-- rel="stylesheet" /> -->
+    <!-- FontAwesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
     <style>
@@ -79,11 +82,11 @@
   <body class="bg-gray-50 overflow-x-hidden">
     <!-- Banner section -->
     <section
-      class="grid lg:grid-cols-2 container mx-auto mt-12 items-center gap-10 px-4 lg:px-0"
+      class="grid lg:grid-cols-2 container mx-auto mt-8 lg:mt-12 items-center gap-8 lg:gap-10 px-4 lg:px-0"
     >
-      <div class="banner-left space-y-7">
+      <div class="banner-left space-y-5 lg:space-y-7">
         <h2
-          class="text-6xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent animate-fade-in-up delay-100"
+          class="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent animate-fade-in-up delay-100"
         >
           It's good <br />
           tea time at The <br />
@@ -144,11 +147,13 @@
 
     <!-- Feature section  -->
 
-    <section class="container mx-auto px-4 py-20">
+    <section class="container mx-auto px-4 py-12 lg:py-20">
       <!-- "Feature section header" -->
-      <div class="text-center space-y-6 mb-16 max-w-3xl mx-auto">
+      <div
+        class="text-center space-y-4 lg:space-y-6 mb-10 lg:mb-16 max-w-3xl mx-auto"
+      >
         <h2
-          class="text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent animate-fade-in-up delay-100"
+          class="text-3xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-cyan-600 to-blue-400 bg-clip-text text-transparent animate-fade-in-up delay-100"
         >
           Our Featured Products
         </h2>
@@ -268,7 +273,7 @@
 
     <!-- Great Tea, Freshly Presented -->
     <section
-      class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 py-12 mb-[90px] items-center"
+      class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 px-4 py-12 mb-16 lg:mb-[90px] items-center"
     >
       <!-- Left Div (Images - Bento Grid) -->
       <div
@@ -308,9 +313,9 @@
       </div>
 
       <!-- Right Div (Content) -->
-      <div class="space-y-10 lg:pl-12">
+      <div class="space-y-8 lg:space-y-10 lg:pl-12">
         <h2
-          class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 animate-fade-in-up delay-100"
+          class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 animate-fade-in-up delay-100"
         >
           <span
             class="bg-gradient-to-r from-[#d09a9a] to-[#f4ceb5] bg-clip-text text-transparent"
@@ -364,21 +369,23 @@
 
     <!-- Meet our super client section -->
     <section
-      class="container mx-auto my-24 rounded-2xl bg-gradient-to-r from-[#ff8938] to-[#ff0000] px-8 py-16 lg:px-16 lg:py-24 relative overflow-hidden shadow-2xl"
+      class="container mx-auto my-12 lg:my-24 rounded-2xl bg-gradient-to-r from-[#ff8938] to-[#ff0000] px-6 py-12 lg:px-16 lg:py-24 relative overflow-hidden shadow-2xl"
     >
       <!-- Background Pattern/Decoration -->
       <div
         class="absolute top-0 right-0 w-full h-full pointer-events-none opacity-10 bg-[url('./images/circles.png')] bg-contain bg-right-top bg-no-repeat mix-blend-overlay"
       ></div>
 
-      <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div
+        class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10"
+      >
         <!-- Left Side: Content -->
         <div
-          class="space-y-8 animate-fade-in-up delay-100 text-center lg:text-left"
+          class="space-y-6 lg:space-y-8 animate-fade-in-up delay-100 text-center lg:text-left"
         >
-          <div class="space-y-4">
+          <div class="space-y-3 lg:space-y-4">
             <h2
-              class="text-4xl lg:text-6xl font-extrabold text-white leading-tight"
+              class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight"
             >
               Meet Our Super <br />
               Clients
@@ -502,10 +509,12 @@
     </section>
 
     <!-- News and events section  -->
-    <section class="container mx-auto px-4 py-24">
-      <div class="text-center space-y-5 mb-14 max-w-4xl mx-auto">
+    <section class="container mx-auto px-4 py-12 lg:py-24">
+      <div
+        class="text-center space-y-4 lg:space-y-5 mb-10 lg:mb-14 max-w-4xl mx-auto"
+      >
         <h2
-          class="text-5xl font-extrabold text-[#1c1c1c] animate-fade-in-up delay-100"
+          class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#1c1c1c] animate-fade-in-up delay-100"
         >
           News & Events
         </h2>
@@ -621,5 +630,242 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer section -->
+    <footer
+      class="bg-gradient-to-b from-[#ffefe9] to-white pt-12 lg:pt-20 pb-10 relative overflow-hidden"
+    >
+      <!-- Decorative Background Elements -->
+      <div
+        class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-200 via-cyan-200 to-blue-200 opacity-50"
+      ></div>
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"
+      ></div>
+      <div
+        class="absolute bottom-0 -left-24 w-72 h-72 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float delay-500"
+      ></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <!-- Footer Top: CTA Section -->
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12 lg:mb-20"
+        >
+          <div class="flex items-center gap-6 animate-fade-in-up delay-100">
+            <div class="relative group">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-500"
+              ></div>
+              <img
+                src="./images/cup.png"
+                alt="Tea Cup"
+                class="relative w-full md:w-full transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12 drop-shadow-lg"
+              />
+            </div>
+            <div>
+              <h2 class="text-2xl md:text-4xl font-extrabold text-[#1c1c1c]">
+                Ready to get started?
+              </h2>
+              <p class="text-gray-500 text-base md:text-lg mt-2 font-medium">
+                Elevate your tea experience today.
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="group py-4 px-10 rounded-full text-white font-bold text-lg bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center gap-3 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/30 animate-fade-in-up delay-200"
+          >
+            Get Started
+            <img
+              class="w-6 transition-transform group-hover:translate-x-1 duration-300 invert brightness-0"
+              src="images/arrow.png"
+              alt="Arrow"
+            />
+          </button>
+        </div>
+
+        <!-- Footer Links Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16"
+        >
+          <!-- Quick Links -->
+          <div class="space-y-6 animate-fade-in-up delay-100">
+            <h4 class="text-xl font-bold text-[#1c1c1c]">Quick Links</h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Insurance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Service -->
+          <div class="space-y-6 animate-fade-in-up delay-200">
+            <h4 class="text-xl font-bold text-[#1c1c1c]">Our Service</h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Life Insurance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Car Insurance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Health Insurance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >House Insurance</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Help -->
+          <div class="space-y-6 animate-fade-in-up delay-300">
+            <h4 class="text-xl font-bold text-[#1c1c1c]">Help</h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-600 font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
+                  ><span
+                    class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-cyan-500 transition-colors"
+                  ></span
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Subscribe -->
+          <div class="space-y-6 animate-fade-in-up delay-400">
+            <h4 class="text-2xl font-bold text-[#1c1c1c]">
+              Subscribe to our newsletter
+            </h4>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 group">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  class="w-full bg-transparent border-b-2 border-gray-300 py-3 text-gray-700 outline-none focus:border-cyan-500 transition-colors placeholder:text-gray-400 font-medium"
+                />
+                <button
+                  class="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center transform group-hover:scale-110 active:scale-95 transition-all duration-300 shadow-md hover:shadow-cyan-500/50"
+                >
+                  <img
+                    src="./images/arrow.png"
+                    class="-rotate-45 w-5 brightness-0 invert"
+                    alt="Submit"
+                  />
+                </button>
+              </div>
+
+              <!-- Social Icons -->
+              <div class="flex gap-4 pt-6">
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white hover:border-transparent transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-1"
+                >
+                  <i class="fa-brands fa-facebook-f font-bold text-lg">f</i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white hover:border-transparent transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-1"
+                >
+                  <i class="fa-brands fa-twitter font-bold text-lg">t</i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white hover:border-transparent transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-1"
+                >
+                  <i class="fa-brands fa-instagram font-bold text-lg">i</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="border-t border-gray-200 pt-8 text-center animate-fade-in-up delay-500"
+        >
+          <p class="text-gray-500 font-medium">
+            © 2027 Tea House. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
